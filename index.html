@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Medical Diagnosis System (Secure)</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🏥 AI Medical Diagnosis System</h1>
+      <p>Advanced symptom analysis and medical condition assessment</p>
+    </div>
+
+    <div class="content">
+      <div class="api-selector">
+        <h3 class="section-title">Diagnosis Engine</h3>
+        <div class="api-option selected">
+          <div class="api-info">
+            <div class="api-name">Infermedica API</div>
+            <div class="api-description">Medical-grade symptom checker used by millions</div>
+          </div>
+          <div class="api-status">Connected via Backend Proxy</div>
+        </div>
+      </div>
+
+      <div class="symptoms-section">
+        <h3 class="section-title">Patient Information</h3>
+        <div class="patient-info">
+          <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <input type="number" id="age" placeholder="Age" min="1" max="120">
+          <select id="location">
+            <option value="">Select Region</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="north_america">North America</option>
+            <option value="south_america">South America</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="symptoms-section">
+        <h3 class="section-title">Symptoms</h3>
+        <div class="symptom-input">
+          <input type="text" id="symptomInput" placeholder="Enter a symptom (e.g., headache, fever, cough)">
+          <button id="addBtn">Add</button>
+        </div>
+        <div class="symptoms-list" id="symptomsList"></div>
+        <div class="common-symptoms" id="commonSymptomButtons"></div>
+      </div>
+
+      <button class="diagnose-btn" id="diagBtn">🔍 Get AI Medical Diagnosis</button>
+      <button class="diagnose-btn" id="downloadJsonBtn" style="margin-top:10px;background:#1976d2">⬇️ Download Results JSON</button>
+
+      <div id="errorMessage" class="error-message"></div>
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Analyzing symptoms with AI...</p>
+        <p style="font-size:14px;margin-top:10px;">Processing medical data</p>
+      </div>
+      <div id="results" class="results"></div>
+
+      <div class="disclaimer">
+        ⚠️ <strong>Medical Disclaimer:</strong> This tool is for informational purposes only and should not replace professional medical advice. Always consult with qualified healthcare professionals for accurate diagnosis and treatment. In case of emergency, contact your local emergency services immediately.
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

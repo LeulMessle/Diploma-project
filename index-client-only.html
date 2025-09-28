@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Medical Diagnosis System (Client-Only Demo)</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🏥 AI Medical Diagnosis System</h1>
+      <p><strong>DEMO ONLY</strong>: Calls Infermedica directly from the browser (keys exposed!).</p>
+    </div>
+    <div class="content">
+      <div class="symptoms-section">
+        <h3 class="section-title">Patient Information</h3>
+        <div class="patient-info">
+          <select id="gender"><option value="">Select Gender</option><option value="male">Male</option><option value="female">Female</option></select>
+          <input type="number" id="age" placeholder="Age" min="1" max="120">
+          <select id="location"><option value="">Select Region</option><option value="europe">Europe</option></select>
+        </div>
+      </div>
+
+      <div class="symptoms-section">
+        <h3 class="section-title">Symptoms</h3>
+        <div class="symptom-input">
+          <input type="text" id="symptomInput" placeholder="Enter a symptom (e.g., headache)">
+          <button id="addBtn">Add</button>
+        </div>
+        <div class="symptoms-list" id="symptomsList"></div>
+      </div>
+
+      <button class="diagnose-btn" id="diagBtn">🔍 Get AI Medical Diagnosis</button>
+
+      <div id="errorMessage" class="error-message"></div>
+      <div id="loading" class="loading"><div class="spinner"></div><p>Analyzing symptoms...</p></div>
+      <div id="results" class="results"></div>
+      <div class="disclaimer">⚠️ Demo only. Do not deploy these keys.</div>
+    </div>
+  </div>
+
+<script>
+let symptoms = [];
+let interviewId = null;
+
+function uuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,(c)=>{const r=Math.random()*16|0,v=c==='x'?r:(r&0x3|0x8);return v.toString(16)});
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  interviewId = uuid();
+  document.getElementById('addBtn').onclick = addSymptom;
+  document.getElementById('diagBtn').onclick = startDiagnosis;
+  document.getElementById('symptomInput').addEventListener('keypress', e => { if (e.key==='Enter') addSymptom(); });
+});
+
+function addSymptom(){
+  const el = document.getElementById('symptomInput');
+  const s = el.value.trim();
+  if(s && !symptoms.includes(s)){ symptoms.push(s); renderSymptoms(); el.value=''; }
+}
+function renderSymptoms(){
+  const list = document.getElementById('symptomsList');
+  list.innerHTML = symptoms.map(x => `<div class="symptom-tag">${x}<span class="remove" onclick="removeSymptom('${x.replace(/'/g,"\'")}')">×</span></div>`).join('');
+}
+function removeSymptom(x){ symptoms = symptoms.filter(s=>s!==x); renderSymptoms(); }
+
+async function startDiagnosis(){
+  if(!symptoms.length){ alert('Add at least one symptom'); return; }
+  const gender = document.getElementById('gender').value;
+  const age = document.getElementById('age').value;
+  if(!gender||!age){ alert('Provide gender and age'); return; }
+
+  document.getElementById('loading').style.display='block';
+  document.getElementById('errorMessage').style.display='none';
+  document.getElementById('results').style.display='none';
+
+  //try {
+  //  const MODEL='infermedica-en';
+  //  const APP_ID='26a67e7a'; // DEMO ONLY
+  //  const APP_KEY='4728b1116fe3cf9bfbc87eb01abbc719'; // DEMO ONLY
+end
+    // Use /parse to get real IDs (still client-side -> not recommended)
+    const parseRes = await fetch('https://api.infermedica.com/v3/parse',{
+      method:'POST',
+      headers:{
+        'App-Id': APP_ID,
+        'App-Key': APP_KEY,
+        'Model': MODEL,
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({ text: symptoms.join(', '), sex: gender, age: { value: parseInt(age,10), unit:'year' } })
+    });
+    if(!parseRes.ok){ throw new Error('Parse failed: '+parseRes.status+' '+parseRes.statusText); }
+    const parsed = await parseRes.json();
+    const evidence = (parsed.mentions||[]).map(m=>({ id:m.id, choice_id:m.choice_id||'present', source:'initial' }));
+
+    const diagRes = await fetch('https://api.infermedica.com/v3/diagnosis',{
+      method:'POST',
+      headers:{
+        'App-Id': APP_ID,
+        'App-Key': APP_KEY,
+        'Model': MODEL,
+        'Content-Type':'application/json',
+        'Interview-Id': interviewId
+      },
+      body: JSON.stringify({ sex: gender, age:{ value: parseInt(age,10), unit:'year' }, evidence })
+    });
+    if(!diagRes.ok){ throw new Error('Diagnosis failed: '+diagRes.status+' '+diagRes.statusText); }
+    const diagnosis = await diagRes.json();
+    displayResults(diagnosis);
+  } catch(e){
+    document.getElementById('errorMessage').innerText = e.message + " (Browser demo may be blocked by CORS/origin policy.)";
+    document.getElementById('errorMessage').style.display='block';
+  } finally {
+    document.getElementById('loading').style.display='none';
+  }
+}
+
+function displayResults(diagnosis){
+  const resultsDiv = document.getElementById('results');
+  if(!diagnosis.conditions || !diagnosis.conditions.length){
+    resultsDiv.innerHTML = `<div class="diagnosis-item"><div class="diagnosis-name">No specific conditions identified</div><div class="diagnosis-description">Consult a healthcare professional.</div></div>`;
+  } else {
+    resultsDiv.innerHTML = `
+      <h3 class="section-title">Diagnosis Results</h3>
+      ${diagnosis.conditions.map(c=>`
+        <div class="diagnosis-item">
+          <div class="diagnosis-name">${c.common_name || c.name}</div>
+          <div class="diagnosis-probability">${(c.probability*100).toFixed(1)}% probability</div>
+          <div class="diagnosis-description">${(c.extras && c.extras.hint) ? c.extras.hint : 'Professional medical evaluation recommended.'}</div>
+        </div>`).join('')}
+    `;
+  }
+  resultsDiv.style.display='block';
+  resultsDiv.scrollIntoView({ behavior:'smooth' });
+}
+</script>
+</body>
+</html>

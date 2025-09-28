@@ -1,0 +1,80 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation",
+  "diagnosis": {
+    "question": {
+      "type": "group_single",
+      "text": "Is your headache a new episode, or is it part of a chronic or recurring pattern?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_3397",
+          "name": "It's a new episode of headache, distinct from any chronic or recurrent headaches from the past",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_3398",
+          "name": "Similar headaches keep coming back, but for less than a month",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_3399",
+          "name": "Similar headaches keep coming back for more than a month",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_49",
+        "name": "Migraine",
+        "common_name": "Migraine",
+        "probability": 0.7692
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzQ5IjoiNSJ9fSwiaWF0IjoxNzU4MDYyMzgwfQ.xGYy8jeV-rLb6Yhy_QGsT7uPz9VIOb7U1f26VKnjR8M"
+  }
+}

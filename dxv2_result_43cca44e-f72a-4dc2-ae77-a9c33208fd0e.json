@@ -1,0 +1,140 @@
+{
+  "interviewId": "43cca44e-f72a-4dc2-ae77-a9c33208fd0e",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation",
+  "diagnosis": {
+    "question": {
+      "type": "group_single",
+      "text": "How long have you had a fever?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_2319",
+          "name": "Less than 3 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2320",
+          "name": "3 to 7 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2855",
+          "name": "8 to 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2854",
+          "name": "More than 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_87",
+        "name": "Common cold",
+        "common_name": "Common cold",
+        "probability": 0.1112
+      },
+      {
+        "id": "c_1076",
+        "name": "Viral gastroenteritis",
+        "common_name": "Stomach flu",
+        "probability": 0.0895
+      },
+      {
+        "id": "c_121",
+        "name": "Acute viral pharyngitis",
+        "common_name": "Acute viral throat infection",
+        "probability": 0.0691
+      },
+      {
+        "id": "c_138",
+        "name": "Food poisoning",
+        "common_name": "Food poisoning",
+        "probability": 0.06
+      },
+      {
+        "id": "c_127",
+        "name": "Pneumonia",
+        "common_name": "Pneumonia",
+        "probability": 0.0578
+      },
+      {
+        "id": "c_1292",
+        "name": "Adenoviral respiratory disease",
+        "common_name": "Adenoviral respiratory disease",
+        "probability": 0.0491
+      },
+      {
+        "id": "c_1077",
+        "name": "Bacterial gastroenteritis",
+        "common_name": "Bacterial gastroenteritis",
+        "probability": 0.0484
+      },
+      {
+        "id": "c_55",
+        "name": "Tension-type headaches",
+        "common_name": "Tension headaches",
+        "probability": 0.0472
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6InNlbmlvciIsInBhdGllbnRFZHVjYXRpb25SZXZpc2lvbnMiOnsiY184NyI6IjUiLCJjXzEwNzYiOiI3IiwiY18xMjEiOiI3IiwiY18xMzgiOiI4IiwiY18xMjciOiI2IiwiY18xMDc3IjoiNCIsImNfNTUiOiI2In19LCJpYXQiOjE3NTgwMTEyODF9.sBVCuLAMDK9I2RNWwAHevI8d_vOpwNaLIvjnETUxLsg"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "interviewId": "919b73e5-6db8-4d2c-a43e-113b475c1478",
+  "mappedLevel": "Self-care",
+  "vendorLevel": "self_care",
+  "diagnosis": {
+    "question": {
+      "type": "group_single",
+      "text": "How long have you had a fever?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_2319",
+          "name": "Less than 3 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2320",
+          "name": "3 to 7 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2855",
+          "name": "8 to 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2854",
+          "name": "More than 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_87",
+        "name": "Common cold",
+        "common_name": "Common cold",
+        "probability": 0.5184
+      },
+      {
+        "id": "c_121",
+        "name": "Acute viral pharyngitis",
+        "common_name": "Acute viral throat infection",
+        "probability": 0.2554
+      },
+      {
+        "id": "c_1292",
+        "name": "Adenoviral respiratory disease",
+        "common_name": "Adenoviral respiratory disease",
+        "probability": 0.1358
+      },
+      {
+        "id": "c_200",
+        "name": "Infectious mononucleosis",
+        "common_name": "Mononucleosis",
+        "probability": 0.1014
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzg3IjoiNSIsImNfMTIxIjoiNyIsImNfMjAwIjoiMyJ9fSwiaWF0IjoxNzU4MDEzNDM4fQ.uGMPb3xItkboT04sAZnWlU-8OWf_i6lGlySeWq2bSag"
+  }
+}

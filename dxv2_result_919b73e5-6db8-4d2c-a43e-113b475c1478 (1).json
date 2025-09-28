@@ -1,0 +1,86 @@
+{
+  "interviewId": "919b73e5-6db8-4d2c-a43e-113b475c1478",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation_24",
+  "diagnosis": {
+    "question": {
+      "type": "single",
+      "text": "Do you smoke or have you smoked cigarettes in the past for at least 10 years?",
+      "extras": {},
+      "items": [
+        {
+          "id": "p_28",
+          "name": "Smoking cigarettes",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_127",
+        "name": "Pneumonia",
+        "common_name": "Pneumonia",
+        "probability": 0.437
+      },
+      {
+        "id": "c_72",
+        "name": "Acute bronchitis",
+        "common_name": "Acute bronchitis",
+        "probability": 0.4085
+      },
+      {
+        "id": "c_87",
+        "name": "Common cold",
+        "common_name": "Common cold",
+        "probability": 0.1377
+      },
+      {
+        "id": "c_1406",
+        "name": "Non-specific chest pain",
+        "common_name": "Non-specific chest pain",
+        "probability": 0.1037
+      },
+      {
+        "id": "c_578",
+        "name": "Allergic bronchopulmonary aspergillosis",
+        "common_name": "Allergic bronchopulmonary aspergillosis",
+        "probability": 0.0916
+      },
+      {
+        "id": "c_520",
+        "name": "Intercostal neuralgia",
+        "common_name": "Intercostal neuralgia",
+        "probability": 0.0782
+      },
+      {
+        "id": "c_1118",
+        "name": "Atypical pneumonia",
+        "common_name": "Atypical pneumonia",
+        "probability": 0.0553
+      },
+      {
+        "id": "c_121",
+        "name": "Acute viral pharyngitis",
+        "common_name": "Acute viral throat infection",
+        "probability": 0.0549
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzEyNyI6IjYiLCJjXzcyIjoiNSIsImNfODciOiI1IiwiY181MjAiOiI2IiwiY18xMjEiOiI3In19LCJpYXQiOjE3NTgwMTM1NDN9.UMI3RjIbIb4XcT1R8AcXJFBaIechaS0QoRWungHOqts"
+  }
+}

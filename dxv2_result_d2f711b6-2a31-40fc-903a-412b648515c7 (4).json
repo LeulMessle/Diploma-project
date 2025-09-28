@@ -1,0 +1,74 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Emergency",
+  "vendorLevel": "emergency_ambulance",
+  "diagnosis": {
+    "question": {
+      "type": "single",
+      "text": "Do you have a weakened immune system, e.g., you are taking chemotherapy or steroids as pills or injections, medications after an organ transplant, or do you have HIV, or did your spleen get removed?",
+      "extras": {},
+      "items": [
+        {
+          "id": "p_83",
+          "name": "Compromised immune system",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_563",
+        "name": "Bacterial meningitis",
+        "common_name": "Bacterial meningitis",
+        "probability": 0.4329
+      },
+      {
+        "id": "c_562",
+        "name": "Viral meningitis",
+        "common_name": "Viral meningitis",
+        "probability": 0.3577
+      },
+      {
+        "id": "c_49",
+        "name": "Migraine",
+        "common_name": "Migraine",
+        "probability": 0.3158
+      },
+      {
+        "id": "c_671",
+        "name": "Encephalitis",
+        "common_name": "Inflammation of the brain",
+        "probability": 0.0911
+      },
+      {
+        "id": "c_55",
+        "name": "Tension-type headaches",
+        "common_name": "Tension headaches",
+        "probability": 0.0601
+      },
+      {
+        "id": "c_249",
+        "name": "Acute streptococcal pharyngitis",
+        "common_name": "Acute streptococcal pharyngitis",
+        "probability": 0.0345
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": true,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzQ5IjoiNSIsImNfNTUiOiI2IiwiY18yNDkiOiI1In19LCJpYXQiOjE3NTgwNjQ5MDZ9.IKblTX7QBtzmeVCSvAxv9Pk9xjNJARqMzwnGeiEIOTM"
+  }
+}

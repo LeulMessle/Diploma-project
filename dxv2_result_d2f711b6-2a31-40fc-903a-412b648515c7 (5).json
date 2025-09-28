@@ -1,0 +1,86 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation",
+  "diagnosis": {
+    "question": {
+      "type": "single",
+      "text": "Have you been diagnosed with diabetes?",
+      "extras": {},
+      "items": [
+        {
+          "id": "p_8",
+          "name": "Diagnosed diabetes",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_405",
+        "name": "Diabetes mellitus type 2",
+        "common_name": "Diabetes mellitus type 2",
+        "probability": 0.1941
+      },
+      {
+        "id": "c_1076",
+        "name": "Viral gastroenteritis",
+        "common_name": "Stomach flu",
+        "probability": 0.162
+      },
+      {
+        "id": "c_138",
+        "name": "Food poisoning",
+        "common_name": "Food poisoning",
+        "probability": 0.1498
+      },
+      {
+        "id": "c_1077",
+        "name": "Bacterial gastroenteritis",
+        "common_name": "Bacterial gastroenteritis",
+        "probability": 0.0978
+      },
+      {
+        "id": "c_142",
+        "name": "Irritable bowel syndrome",
+        "common_name": "Irritable bowel syndrome",
+        "probability": 0.0855
+      },
+      {
+        "id": "c_1184",
+        "name": "Foreign body in nose",
+        "common_name": "Foreign body in nose",
+        "probability": 0.0692
+      },
+      {
+        "id": "c_815",
+        "name": "Functional dyspepsia",
+        "common_name": "Indigestion",
+        "probability": 0.0577
+      },
+      {
+        "id": "c_37",
+        "name": "Nephrolithiasis",
+        "common_name": "Kidney stones",
+        "probability": 0.0386
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzQwNSI6IjQiLCJjXzEwNzYiOiI3IiwiY18xMzgiOiI4IiwiY18xMDc3IjoiNCIsImNfMTQyIjoiNSIsImNfMTE4NCI6IjIiLCJjXzgxNSI6IjEwIiwiY18zNyI6IjQifX0sImlhdCI6MTc1ODA2NTEwN30.wl4aIpe68iUAa96oMswWuhFJ3_qdLp_iIodI7ZbYbxM"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation",
+  "diagnosis": {
+    "question": {
+      "type": "group_multiple",
+      "text": "Where do you feel the chest pain, and where does the pain move or spread to?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_51",
+          "name": "It is all over",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_1509",
+          "name": "It is behind the breastbone",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2074",
+          "name": "Moves or spreads to the left upper limb; for example, the shoulder, arm, or fingers",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_37",
+          "name": "Moves or spreads to the upper back, between the shoulder blades",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_36",
+          "name": "Moves or spreads to the neck",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_663",
+        "name": "Stable angina pectoris",
+        "common_name": "Stable angina pectoris",
+        "probability": 0.188
+      },
+      {
+        "id": "c_140",
+        "name": "Myocardial infarction",
+        "common_name": "Heart attack",
+        "probability": 0.0717
+      },
+      {
+        "id": "c_664",
+        "name": "Unstable angina pectoris",
+        "common_name": "Unstable angina pectoris",
+        "probability": 0.0682
+      },
+      {
+        "id": "c_1231",
+        "name": "Motion sickness",
+        "common_name": "Travel sickness",
+        "probability": 0.0443
+      },
+      {
+        "id": "c_1406",
+        "name": "Non-specific chest pain",
+        "common_name": "Non-specific chest pain",
+        "probability": 0.0328
+      },
+      {
+        "id": "c_815",
+        "name": "Functional dyspepsia",
+        "common_name": "Indigestion",
+        "probability": 0.0321
+      },
+      {
+        "id": "c_127",
+        "name": "Pneumonia",
+        "common_name": "Pneumonia",
+        "probability": 0.0316
+      },
+      {
+        "id": "c_1076",
+        "name": "Viral gastroenteritis",
+        "common_name": "Stomach flu",
+        "probability": 0.0285
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzE0MCI6IjIiLCJjXzEyMzEiOiIxIiwiY184MTUiOiIxMCIsImNfMTI3IjoiNiIsImNfMTA3NiI6IjcifX0sImlhdCI6MTc1ODA2MzEwMX0.giUIv-B0OQpMrK-NKKvV14lo9p7xiA_q7JyNZV9fSrw"
+  }
+}

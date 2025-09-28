@@ -1,0 +1,116 @@
+{
+  "interviewId": "919b73e5-6db8-4d2c-a43e-113b475c1478",
+  "mappedLevel": "Self-care",
+  "vendorLevel": "self_care",
+  "diagnosis": {
+    "question": {
+      "type": "group_single",
+      "text": "How long have you had a fever?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_2319",
+          "name": "Less than 3 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2320",
+          "name": "3 to 7 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2855",
+          "name": "8 to 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_2854",
+          "name": "More than 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_1076",
+        "name": "Viral gastroenteritis",
+        "common_name": "Stomach flu",
+        "probability": 0.4951
+      },
+      {
+        "id": "c_138",
+        "name": "Food poisoning",
+        "common_name": "Food poisoning",
+        "probability": 0.3371
+      },
+      {
+        "id": "c_1077",
+        "name": "Bacterial gastroenteritis",
+        "common_name": "Bacterial gastroenteritis",
+        "probability": 0.2284
+      },
+      {
+        "id": "c_812",
+        "name": "Rotavirus infection",
+        "common_name": "Rotavirus infection",
+        "probability": 0.0894
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzEwNzYiOiI3IiwiY18xMzgiOiI4IiwiY18xMDc3IjoiNCIsImNfODEyIjoiMyJ9fSwiaWF0IjoxNzU4MDEzNjM0fQ.OVXExjMamoWChtWuiSbK_oofEPDf1YAYtxr01QgZ7BQ"
+  }
+}

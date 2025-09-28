@@ -1,0 +1,98 @@
+{
+  "interviewId": "5564ad3c-813c-4c58-b3b6-0ebd1182a283",
+  "mappedLevel": "Non-emergency care",
+  "vendorLevel": "consultation",
+  "diagnosis": {
+    "question": {
+      "type": "group_single",
+      "text": "How long have you had abdominal pain?",
+      "extras": {},
+      "items": [
+        {
+          "id": "s_1840",
+          "name": "Less than 2 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_1852",
+          "name": "Between 2 and 7 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_1853",
+          "name": "Between 8 and 14 days",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "s_1842",
+          "name": "More than 2 weeks",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_184",
+        "name": "Acute cystitis",
+        "common_name": "Bladder infection",
+        "probability": 0.7679
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzE4NCI6IjUifX0sImlhdCI6MTc1ODA2NTM4NH0.8Chg5Dn1eL4x9iD3V6iv8eMiWZnW4rN4GKd9Vq_rsXQ"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Emergency",
+  "vendorLevel": "emergency",
+  "diagnosis": {
+    "question": {
+      "type": "single",
+      "text": "Is it possible that your symptoms were triggered by contact with something you may be allergic to, such as certain foods, chemicals, pollen, or pets?",
+      "extras": {},
+      "items": [
+        {
+          "id": "p_82",
+          "name": "Reported contact with allergen",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_715",
+        "name": "Angioedema",
+        "common_name": "Angioedema",
+        "probability": 0.4999
+      },
+      {
+        "id": "c_700",
+        "name": "Anaphylaxis",
+        "common_name": "Severe allergic reaction",
+        "probability": 0.3066
+      },
+      {
+        "id": "c_1112",
+        "name": "Chronic urticaria",
+        "common_name": "Chronic hives",
+        "probability": 0.138
+      },
+      {
+        "id": "c_77",
+        "name": "Acute urticaria",
+        "common_name": "Short-term hives",
+        "probability": 0.0981
+      },
+      {
+        "id": "c_832",
+        "name": "Food allergy",
+        "common_name": "Food allergy",
+        "probability": 0.0712
+      },
+      {
+        "id": "c_67",
+        "name": "Oral herpes",
+        "common_name": "Cold sore",
+        "probability": 0.0617
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": false,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6ImFkdWx0IiwicGF0aWVudEVkdWNhdGlvblJldmlzaW9ucyI6eyJjXzc3IjoiNCIsImNfODMyIjoiNiIsImNfNjciOiI0In19LCJpYXQiOjE3NTgwNjQ1OTh9.E_kyjiNo6Ntx0kCSUGsJROJX4qtQ1S0MoVKrSumulzc"
+  }
+}

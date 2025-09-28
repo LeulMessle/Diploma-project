@@ -1,0 +1,176 @@
+{
+  "interviewId": "d2f711b6-2a31-40fc-903a-412b648515c7",
+  "mappedLevel": "Emergency",
+  "vendorLevel": "emergency_ambulance",
+  "diagnosis": {
+    "question": {
+      "type": "group_multiple",
+      "text": "Which of the following heart or blood vessel problems do you have?",
+      "extras": {},
+      "items": [
+        {
+          "id": "p_80",
+          "name": "Heart attack in the past",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_278",
+          "name": "Stroke in the past",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_201",
+          "name": "Deep vein thrombosis in the past",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_78",
+          "name": "Coronary disease",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_9",
+          "name": "Hypertension",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_183",
+          "name": "Peripheral vascular disease",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_342",
+          "name": "Atrial fibrillation",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "p_441",
+          "name": "Chronic heart failure",
+          "choices": [
+            {
+              "id": "present",
+              "label": "Yes"
+            },
+            {
+              "id": "absent",
+              "label": "No"
+            },
+            {
+              "id": "unknown",
+              "label": "Don't know"
+            }
+          ]
+        }
+      ]
+    },
+    "conditions": [
+      {
+        "id": "c_709",
+        "name": "Hemorrhagic stroke",
+        "common_name": "Hemorrhagic stroke",
+        "probability": 0.5234
+      },
+      {
+        "id": "c_114",
+        "name": "Ischemic stroke",
+        "common_name": "Ischemic stroke",
+        "probability": 0.4754
+      }
+    ],
+    "extras": {},
+    "has_emergency_evidence": true,
+    "should_stop": false,
+    "interview_token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQYXRpZW50RWR1Y2F0aW9uUmV2aXNpb25zIiwidG9rZW5QYXlsb2FkIjp7ImFnZUJ1bmRsZSI6InNlbmlvciIsInBhdGllbnRFZHVjYXRpb25SZXZpc2lvbnMiOnsiY18xMTQiOiIyIn19LCJpYXQiOjE3NTgwNjMyMjJ9.ka9VeG_uo7P8cPEy4Dpdw1xtpJt8tcGOhAC8msV2mhc"
+  }
+}

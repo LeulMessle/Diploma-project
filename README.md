@@ -4,7 +4,7 @@ Thin-client + proxy demo that calls a medical symptom-assessment API via a small
 
 ## Quick start
 1) `cp .env.example .env` and fill in credentials 
-2) move fiiles (`index.html`, `app.js`, `styles.css`) to a public folders
+2) move fiiles (`index.html`, `app.js`, `styles.css`) to a public folder
 3) `npm install`  
 4) `npm start`  
 4) Open http://localhost:3000
